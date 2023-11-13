@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div>
-    <audio src="music/yuiko - 翳り空.mp3" controls>浏览器版本过低，请升级浏览器</audio><br />
-    <video src="video/lsp.mp4" controls width="300" autoplay loop>浏览器版本过低，请升级浏览器</video><br />
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表格</title>
+  </head>
+  <body>
+    <!-- 文本框 -->
+    <div>
+      <form action="" method="post">
+        <p>名<input type="text" /></p>
+        <p>性<input type="text" /></p>
+      </form>
+    </div>
+    <div>
+      <form action="">
+        <p>
+          性别：<label>男<input type="radio" name="sex" value="男" /></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label>女<input type="radio" name="sex" value="女" /></label>
+        </p>
+        <p>
+          我喜欢的水果：<br />
+          <input type="checkbox" name="shuiguo" value="苹果" id="苹果" /><label for="苹果">苹果</label><br />
+          <input type="checkbox" name="shuiguo" value="梨子" id="梨子" /><label for="梨子">梨子</label><br />
+          <input type="checkbox" name="shuiguo" value="桃子" id="桃子" /><label for="桃子">桃子</label><br />
+        </p>
+        <p>
+          <input type="button" value="快点我吧" />
+        </p>
+        <p>请作自我介绍：</p>
+        <p>
+          <textarea cols="20" rows="3" placeholder="请在此处介绍自己..."></textarea>
+        </p>
+      </form>
+    </div>
+
+    <!-- 表格 -->
+    <div>
+      <table border="1">
+        <tr>
+          <td>上午</td>
+          <td>下午</td>
+        </tr>
+        <tr>
+          <td>语文</td>
+          <td>英语</td>
+        </tr>
+        <tr>
+          <td>数字</td>
+          <td>历史</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 课程表 -->
+    <div>
+      <table border="1">
+        <caption>
+          课程表
+        </caption>
+        <tr>
+          <th>星期一</th>
+          <th>星期二</th>
+          <th>星期四</th>
+          <th>星期五</th>
+        </tr>
+        <tr>
+          <td>语文</td>
+          <td>数学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+        <tr>
+          <td>语文</td>
+          <td>数学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+        <tr>
+          <td>语文</td>
+          <td>数学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+        <tr>
+          <td>语文</td>
+          <td>数学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 合并表格 -->
+    <div>
+      <h2>合并表格</h2>
+      <table border="1" width="460">
+        <caption>
+          课程表
+        </caption>
+        <tr align="center">
+          <th>星期一</th>
+          <th>星期二</th>
+          <th>星期三</th>
+          <th>星期四</th>
+          <th>星期五</th>
+        </tr>
+        <tr align="center">
+          <td rowspan="2">语文</td>
+          <td>数学</td>
+          <td>化学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+        <tr align="center">
+          <td>数学</td>
+          <td>化学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+        <tr align="center">
+          <td colspan="5">课间活动</td>
+        </tr>
+        <tr align="center">
+          <td>语文</td>
+          <td>数学</td>
+          <td>化学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+        <tr align="center">
+          <td>语文</td>
+          <td>数学</td>
+          <td>化学</td>
+          <td>英语</td>
+          <td>生物</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
