@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪元素</title>
+  <style>
+    .a1::after {
+      content: "(备注)";
+      color: red;
+    }
+    li {
+      list-style: none;
+    }
+    li::before {
+      content: "*";
+    }
+  </style>
+</head>
+<body>
+  <p class="a1">这是一段文字</p>
+  <ul>
+    <li>我是第一</li>
+    <li>我是第二</li>
+    <li>我是第三</li>
+    <li>我是第四</li>
+  </ul>
+</body>
+</html>
