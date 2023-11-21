@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新增伪类</title>
+    <style>
+      /* 边框 */
+      input:hover {
+        border: 1px solid red;
+      }
+      /* 用户名 */
+      .name:focus {
+        background-color: orange;
+      }
+      /* 密码 */
+      .password:focus {
+        background-color: yellow;
+      }
+      /* div背景 */
+      div {
+        background-color: #eee;
+        width: 200px;
+        height: 150px;
+        margin-top: 5px;
+      }
+      /* section背景 */
+      section {
+        background-color: yellow;
+        width: 200px;
+        height: 30px;
+        margin-top: 5px;
+      }
+      /* 空白div背景 */
+      div:empty {
+        background-color: red;
+      }
+      /* 空白section背景 */
+      section:empty {
+        background-color: #abcdef;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      用户名：<input type="text" class="name" /><br />
+      密码：<input type="password" class="password" />
+    </form>
+    <div>
+      <section>one</section>
+      <section>two</section>
+    </div>
+    
+    <!-- 空白div -->
+    <div></div>
+
+    <div>
+      <section>three</section>
+      <section>four</section>
+      <section>five</section>
+      <section></section>
+    </div>
+  </body>
+</html>
